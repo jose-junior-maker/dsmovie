@@ -1,5 +1,5 @@
 //import arrow from '../../assets/img/arrow.svg'
-import Arrow from '../../assets/img/arrow.svg';
+import Arrow from '../../assets/img/arrow.svg?react';
 import type { MoviePage } from '../../types/movie';
 import './styles.css'
 
