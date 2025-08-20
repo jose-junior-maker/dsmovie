@@ -10,12 +10,19 @@ public class PageDTO<T> {
     private int currentPage;
     private long totalElements;
     private int totalPages;
+    private Boolean first;
+    private Boolean last;
+    private Integer size;
+
 
     public PageDTO(Page<T> page){
         this.content = page.getContent();
         this.currentPage = page.getNumber();
         this.totalElements = page.getTotalElements();
         this.totalPages = page.getTotalPages();
+        this.first = page.isFirst();
+        this.last = page.isLast();
+        this.size = page.getSize();
     }
 
     public List<T> getContent() {
@@ -48,5 +55,29 @@ public class PageDTO<T> {
 
     public void setTotalPages(int totalPages) {
         this.totalPages = totalPages;
+    }
+
+    public Boolean getFirst() {
+        return first;
+    }
+
+    public void setFirst(Boolean first) {
+        this.first = first;
+    }
+
+    public Boolean getLast() {
+        return last;
+    }
+
+    public void setLast(Boolean last) {
+        this.last = last;
+    }
+
+    public Integer getSize() {
+        return size;
+    }
+
+    public void setSize(Integer size) {
+        this.size = size;
     }
 }

@@ -21,6 +21,9 @@ export type Movie = {
 export type MoviePage = {
     content: Movie[];
     currentPage: number;
-    totalPages: number;
     totalElements: number;
+    totalPages: number;
+    first: boolean;
+    last: boolean;
+    size: number;
 }
