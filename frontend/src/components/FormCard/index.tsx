@@ -44,7 +44,7 @@ export default function FormCard({ movieId }: Props) {
             }
         }
 
-        axios(config).then(response => {
+        axios(config).then(() => {
             navigate('/');
         });
 
