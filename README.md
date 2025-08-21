@@ -26,8 +26,7 @@ A aplicação consiste em uma listagem de filmes e suas respectivas média de no
   
 ## Front end
 - HTML / CSS / Bootstrap / JS / TypeScript
-- ReactJS
-- React Native (Componentes, Props e Estado)
+- ReactJS (Componentes, Props e Estado)
 - React Hooks (useState, useEffect, useParams, useNavigate)
 - Axios
 
